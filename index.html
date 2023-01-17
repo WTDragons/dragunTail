@@ -20,45 +20,45 @@
 </head>
 
 <body>
-<!-- Nav -->
+
+<!-- main menu -->
 <header>
-<nav class="navbar navbar-expand-xl navbar-dark ">
+  <nav class="navbar navbar-expand-xl navbar-dark ">
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
-    
+<!-- logo -->
     <a href="index.html">  
-        <img src="img/icon.jpg" alt="iconsss" class=" navicon rounded-circle ">
+        <img src="img/testtt.jpg" alt="logo" class=" navicon rounded-circle ">
     </a>
+<!-- main menu list -->
     <div class="collapse navbar-collapse justify-content-end" id="navList"> 
       <ul class="navbar-nav">
-        
-        <li class="nav-item active">
-            <a class="nav-link"  href="index.html">Home</a>
+
+        <li class="nav-item active"> <img src="img/fb.png" alt="">
+            <a class="nav-link" href="about.html">關於也龍</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+        <li class="nav-item active"> <img src="img/fb.png" alt="">
+          <a class="nav-link" href="information.html">像素時報</a>
+      </li>
+        <li class="nav-item active"> <img src="img/fb.png" alt="">
+            <a class="nav-link" href="gallery.html">藝術畫廊</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
+        <li class="nav-item active"> <img src="img/fb.png" alt="">
+            <a class="nav-link" href="commission.html">委託相關</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="commission.html">Commission</a>
+        <li class="nav-item disabled "> <img src="img/fb.png" alt="">
+          <a class="nav-link" href="#">像素教學(施工中)</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+        <li class="nav-item active"> <img src="img/fb.png" alt="">
+            <a class="nav-link" href="contact.html">聯絡我</a>
         </li>
+      </ul>
     </div>
   </nav>
 </header>
 
-<!-- main img -->
-<!-- <div class="header mb-1 ">    
-    <div class="homeNameBase"> 
-    <img src="img/main.jpg" alt="header img" class=" headerImg">
-   </div>
-</div> -->
-
+<!-- banner -->
 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -98,110 +98,100 @@
   </button>
 </div>
 
-   
-<!-- Content -->
-<div class="container Content text-center "> 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="img/testtt.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h4 class="card-title">場次</h4>
-                <p class="card-text">週邊和活動
-              </div>
-              <ul class="list-group list-group-flush">
-                  <li class="list-group-item btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-                      <span class="badge bg-dark">FF40</span> <text class="text-dark"> 2月4-5日 L43-44</text>
-                  </li>
-                    <div class="collapse " id="collapseExample1">
-                      <div class="card card-body">
-                          原創食物 <br> Hololive | 薩爾達傳說
-                      </div>
-                    </div>
+<!-- content -->
+<div class="container text-center "> 
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+<!-- convention -->
+     <div class="col">
+        <div class="card h-100">
+          <img src="img/testtt.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">場次</h4>
+            <p class="card-text">週邊和活動</p>
+          </div>
+            
+          <ul class="list-group list-group-flush ">
+            <a href="#" class="text-decoration-none">
+              <li class="list-group-item btn btn-light "  >
+                 <span class="badge bg-info">FF40</span> 2月4-5日 L43-44
+              </li>
+            </a>
+            <li class="list-group-item">
+                <span class="badge bg-info">新品</span> 搖搖立牌
+            </li>
+            <li class="list-group-item">
+                <span class="badge bg-info">好耶</span> 新網站啟動!
+            </li>
+          </ul> 
 
-                  <li class="list-group-item btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                      <span class="badge bg-dark">PF38</span> <text class="text-dark"> 2月4-5日 L43-44</text>
-                  </li>
-                    <div class="collapse" id="collapseExample2">
-                      <div class="card card-body">
-                        Somees the relevant trigger.
-                      </div>
-                    </div> 
+          <div class="card-footer">
+            <small class="text-muted">最後更新於 2023/2/2</small>
+          </div>
+        </div>
+    </div>
+<!-- information -->
+    <div class="col">
+        <div class="card h-100">
+          <img src="img/news.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">公告欄</h4>
+            <p class="card-text">歡迎收看龍與尾巴亭的最新消息！</p>
+          </div>
 
-                  <li class="list-group-item btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                      <span class="badge bg-dark">CWT 63</span> <text class="text-dark"> 2月4-5日 L43-44</text>
-                  </li>
-                    <div class="collapse" id="collapseExample3">
-                      <div class="card card-body">
-                        Somees the relevant trigger.
-                      </div>
-                    </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              
+                <span class="badge bg-info">FF40</span> 場次通販
+            </li>
+            <li class="list-group-item">
+                <span class="badge bg-warning">新品</span> 搖搖立牌
+            </li>
+            <li class="list-group-item">
+                <span class="badge bg-danger">好耶</span> 新網站啟動!
+            </li>
+          </ul> 
+
+          <div class="card-footer">
+            <small class="text-muted">最後更新於 2023/2/2</small>
           </div>
-          <div class="col">
-              <div class="card h-100">
-                <img src="img/news.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h4 class="card-title">公告欄</h4>
-                  <p class="card-text">歡迎收看龍與尾巴亭的最新消息！</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                      <span class="badge bg-warning">FF40</span> 場次通販
-                  </li>
-                  <li class="list-group-item">
-                      <span class="badge bg-info">新品</span> 搖搖立牌
-                  </li>
-                  <li class="list-group-item">
-                      <span class="badge bg-danger">好耶</span> 新網站啟動!
-                  </li>
-                </ul>
-                <div class="card-footer">
-                  <small class="text-muted">最後更新於 2023/2/2</small>
-                </div>
-              </div>
+        </div>
+    </div>
+<!-- commission  -->
+    <div class="col">
+        <div class="card h-100">
+          <img src="img/.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">委託狀態</h4>
+            <p class="card-text">
+          
           </div>
-          <div class="col">
-              <div class="card h-100">
-                <img src="img/.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h4 class="card-title">委託狀態</h4>
-                  <p class="card-text">
-                
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                      <span class="badge bg-success">商用</span> 開啟
-                  </li>
-                  <li class="list-group-item">
-                      <span class="badge bg-success">個人</span> 開啟
-                  </li>
-                  <li class="list-group-item">
-                      <span class="badge bg-success">???</span>????
-                  </li>
-                </ul>
-                <div class="card-footer">
-                  <small class="text-muted">最後更新於 2023/2/2</small>
-                </div>
-              </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <span class="badge bg-success">商用</span> 開啟
+            </li>
+            <li class="list-group-item">
+                <span class="badge bg-success">個人</span> 開啟
+            </li>
+            <li class="list-group-item">
+                <span class="badge bg-success">???</span>????
+            </li>
+          </ul>        
+          <div class="card-footer">
+            <small class="text-muted">最後更新於 2023/2/2</small>
           </div>
-      </div>    
-       
+        </div>
+    </div>
+<!-- end -->
+  </div>       
 </div>
 
 
-    
-<!-- ae -->
-
-<!-- Footer --> 
+<!-- footer --> 
 <footer class="footer container-fluid" >
-
   <div class="row ">
+<!-- social -->    
       <div class="footerIconList ">
-          <div class="footerIcon  ">
+          <div class="footerIcon ">
               <a href="  https://home.gamer.com.tw/homeindex.php?owner=wtdragon"><img src="img/gamer.png" alt="Gamer"></a>
           </div>
           <div class="footerIcon  ">
@@ -220,15 +210,12 @@
               <a href="https://www.plurk.com/WTDragon"><img src="img/plurk.png" alt="plurk"></a>
           </div>
       </div>
+<!-- copyright -->
       <div class="text-center">
           <p class="text-muted small mb-0">Copyright &copy; WTDragon</p>
       </div>
   </div>
-
 </footer>
-
-<!-- <div class="long-line"></div> -->
-
 </body>
 
 
