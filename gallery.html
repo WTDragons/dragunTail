@@ -19,7 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
 <!-- main menu -->
 <header>
@@ -28,31 +28,135 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 <!-- logo -->
-    <a href="index.html">  
-        <img src="img/logo.jpg" alt="logo" class=" navicon rounded-circle ">
-    </a>
+   
 <!-- main menu list -->
     <div class="collapse navbar-collapse justify-content-end" id="navList"> 
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link"  href="index.html">Home</a>
+      <ul class="navbar-nav ">
+        <a href="index.html">  
+          <img src="img/logo.png" alt="logo" class="logo">
+      </a>
+        <li class="nav-item active"> <img class="nav_img" src="img/about.png" alt="about">
+          <a class="nav-link" href="about.html">關於也龍</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+        <li class="nav-item active"> <img class="nav_img" src="img/information.png" alt="information">
+          <a class="nav-link" href="information.html">公告欄</a>
+      </li>
+        <li class="nav-item active"> <img class="nav_img" src="img/gallery.png" alt="gallery">
+            <a class="nav-link" href="gallery.html">藝術畫廊</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
+        <li class="nav-item active"> <img class="nav_img" src="img/commission.png" alt="commission">
+            <a class="nav-link" href="commission.html">委託相關</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="commission.html">Commission</a>
+        <li class="nav-item active"> <img class="nav_img" src="img/market.png" alt="market">
+           <a class="nav-link" href="market.html">​龍尾巴市集</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+        <li class="nav-item active"> <img class="nav_img" src="img/tutorial_pixel.png" alt="tutorial_pixel">
+          <a class="nav-link" href="tutorial_pixel.html">施工中</a>
+       </li>
+        <li class="nav-item active"> <img class="nav_img" src="img/contact.png" alt="contact">
+            <a class="nav-link" href="contact.html">聯絡我</a>
         </li>
       </ul>
     </div>
   </nav>
 </header>
+
+<!-- gotop -->
+<button onclick="topFunction()" id="go-top-btn" title="Go to top">Top</button>
+
+
+<!-- banner -->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade pb-5 " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/main.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>新網站啟動</h5>
+        <p>歷盡千辛萬苦終於有自己的網站了 感謝各位～ 沒有你們的支持 <br>就沒有今天的龍與尾巴亭 </p>
+       </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/main2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/main3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- content -->
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg  " style="width:100%;width:2250px;"   >
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <img src="image.jpg" class="img-fluid" id="modal-img">
+        
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer" id="carouselExampleCaptions">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+</div>
+<!-- The Gallery -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="img/1.jpg"  class="img-fluid" data-toggle="modal" data-target="#myModal" data-img="img/1.jpg">
+    </div>
+    <div class="col-md-4">
+      <img src="img/main.jpg" class="img-fluid" data-toggle="modal" data-target="#myModal" data-img="img/main.jpg">
+    </div>
+    <div class="col-md-4">
+      <img src="img/3.jpg"  class="img-fluid" data-toggle="modal" data-target="#myModal" data-img="img/3.jpg">
+    </div>
+  </div>
+</div>
+
+<!-- end -->
 
 <!-- Content -->
  
@@ -84,140 +188,50 @@
                 <img class=" galleryImg " src="img/ill (4).jpg">
             </a>
         </div>
-        <div class=" col-lg-3 col-md-6 ">
-            <a href="img//ill (5).jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="img/ill (5).jpg">
-            </a>
-        </div>
-        <div class=" col-lg-3 col-md-6 ">
-            <a href="img//ill (6).jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="img/ill (6).jpg">
-            </a>
-        </div>
-        <div class=" col-lg-3 col-md-6 ">
-            <a href="img//ill (7).jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="img/ill (7).jpg">
-            </a>
-        </div>
-        <div class=" col-lg-3 col-md-6 ">
-            <a href="img//ill (8).jpg" data-toggle="lightbox" data-gallery="example-gallery" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="img/ill (8).jpg">    
-            </a>
-        </div>
-        <div class="col-12 text-center">
-            <div class="smallTitle">Comic</div>
-        </div>
-
-        <div class=" col-lg-3 col-md-6 mb-3 ">
-            <a href="https://truth.bahamut.com.tw/artwork/202208/a2203bb9433a8e678e1c3736d52a734c.JPG" data-toggle="lightbox" data-gallery="comic1" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="https://truth.bahamut.com.tw/artwork/202208/a2203bb9433a8e678e1c3736d52a734c.JPG">
-            </a>
-        </div>
-
-        <div class=" col-lg-3 col-md-6  mb-3 ">
-            <a href="https://truth.bahamut.com.tw/artwork/202203/ee71ddb8927548906d85c5e726378d46.JPG" data-toggle="lightbox" data-gallery="comic2" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="https://truth.bahamut.com.tw/artwork/202203/ee71ddb8927548906d85c5e726378d46.JPG">
-            </a>
-        </div>
-
-        <div class=" col-lg-3 col-md-6  mb-3">
-            <a href="    https://truth.bahamut.com.tw/artwork/202206/3ae7b5bcd057812f4e827f987ccd8b2d.JPG " data-toggle="lightbox" data-gallery="comic4" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="https://truth.bahamut.com.tw/artwork/202206/3ae7b5bcd057812f4e827f987ccd8b2d.JPG ">
-            </a>
-        </div>
-
-        <div class=" col-lg-3 col-md-6  mb-3">
-            <a href="https://truth.bahamut.com.tw/artwork/202206/bfb723686b5685aa6028ede3c324cd24.JPG" data-toggle="lightbox" data-gallery="comic3" class="d-block mb-4 ">  
-                <img class=" galleryImg " src="https://truth.bahamut.com.tw/artwork/202206/bfb723686b5685aa6028ede3c324cd24.JPG">
-            </a>
-        </div>
-
-    </div>
-</div>
-
-
-<div class="container mt-5 galleryCon">
-    <div class="row"> 
-        
-    </div>
-</div>
-
-
- <!-- <comic1> -->
-<div data-toggle="lightbox" data-gallery="comic1" data-src=" https://truth.bahamut.com.tw/artwork/202208/4a60fb9cf387b93ca3883aad33cc91c8.JPG" data-title="Hidden item 1"></div>
-</div>
-<div data-toggle="lightbox" data-gallery="comic1" data-src="https://truth.bahamut.com.tw/artwork/202208/8062d8db6cc2b166427c6a1a61207330.JPG" data-title="Hidden item 2"></div>
-</div>
-<div data-toggle="lightbox" data-gallery="comic1" data-src=" https://truth.bahamut.com.tw/artwork/202208/e3efc88555f5fcb39f5f6c845e425af0.JPG" data-title="Hidden item 3"></div>
-</div> 
- <!-- <comic2> -->
- 
-    <div data-toggle="lightbox" data-gallery="comic2" data-src="https://truth.bahamut.com.tw/artwork/202203/3140fd0a303c0bb58de796aff89866c9.JPG" data-title="Hidden item 1"></div>
-</div>
-<div data-toggle="lightbox" data-gallery="comic2" data-src=" https://truth.bahamut.com.tw/artwork/202203/63b49ccd30dffb64cd953b5ec7a98e7e.JPG" data-title="Hidden item 2"></div>
-</div> 
-<div data-toggle="lightbox" data-gallery="comic2" data-src=" https://truth.bahamut.com.tw/artwork/202203/4fe4aa4800f446ca3069bfff42025d45.JPG" data-title="Hidden item 3"></div>
-</div> 
-
- <!-- <comic3> -->
- 
-    <div data-toggle="lightbox" data-gallery="comic3" data-src="https://truth.bahamut.com.tw/artwork/202206/e022c266a33f3732c1840e0003d04337.JPG" data-title="Hidden item 1"></div>
-</div>
-<div data-toggle="lightbox" data-gallery="comic3" data-src="https://truth.bahamut.com.tw/artwork/202206/d395a49fc6f03f90357c32cd81b611db.JPG" data-title="Hidden item 2"></div>
-</div> 
-<div data-toggle="lightbox" data-gallery="comic3" data-src=" https://truth.bahamut.com.tw/artwork/202206/ce8282e83b5ca633eeb7fbc0871401d9.JPG" data-title="Hidden item 3"></div>
-</div> 
-
- <!-- <comic4> -->
- 
-    <div data-toggle="lightbox" data-gallery="comic4" data-src="https://truth.bahamut.com.tw/artwork/202206/6a37f13cb86b662f05d6d756c5e5a404.JPG?w=1000" data-title="Hidden item 1"></div>
-</div>
-<div data-toggle="lightbox" data-gallery="comic4" data-src="https://truth.bahamut.com.tw/artwork/202206/732ab655051e554f6b11f25fa6fa6290.JPG?w=1000" data-title="Hidden item 2"></div>
-</div> 
-<div data-toggle="lightbox" data-gallery="comic4" data-src="https://truth.bahamut.com.tw/artwork/202206/a8048db3ed354d2e8659698d69c608f7.JPG?w=1000" data-title="Hidden item 3"></div>
-</div> 
-
-
-
 
 </div>
 
 
-<!-- Footer -->   
-<div class="long-line"></div>
 
-    <footer class="footer" >
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-                    <p class="text-muted small mb-0">Copyright &copy;allie_at_mark </p>
-                </div>
-
-                <div class="footerIconList justify-content-center ">
-                    <div class="footerIcon  ">
-                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                    </div>
-                    <div class="footerIcon  ">
-                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                    </div>
-                    <div class="footerIcon  ">
-                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <a href="#top"><button type="button" class="goTopBtn">TOP</button></a>
+<!-- footer --> 
+<footer class="container-fluid" id="footer" >
+  <div class="row ">
+<!-- social -->    
+<div class="title col-md-6 ">
+  <img src="img/title.png" alt="">
+</div>
 
 
-<!-- End of body -->
-
+      <div class="footerIconList col-md-6 ">
+          <div class="footerIcon ">
+              <a href="  https://home.gamer.com.tw/homeindex.php?owner=wtdragon"><img src="img/gamer.png" alt="Gamer"></a>
+          </div>
+          <div class="footerIcon  ">
+              <a href="https://www.facebook.com/wtdragon/"><img src="img/fb.png" alt="fb"></a>
+          </div>
+          <div class="footerIcon  ">
+              <a href="https://twitter.com/WTDragons"><img src="img/twitter.png" alt="twitter"></a>
+          </div>
+          <div class="footerIcon  ">
+              <a href="https://www.pixiv.net/users/66529691"><img src="img/pixiv.png" alt="pixiv"></a>
+          </div>
+          <div class="footerIcon  ">
+              <a href="https://www.instagram.com/wtdragons/"><img src="img/ig.png" alt="ig"></a>
+          </div>
+          <div class="footerIcon  ">
+              <a href="https://www.plurk.com/WTDragon"><img src="img/plurk.png" alt="plurk"></a>
+          </div>
+      </div>
+<!-- copyright -->
+      <div class="text-center">
+          <p class="text-muted small mb-0">Copyright &copy; WTDragon</p>
+      </div>
+  </div>
+</footer>
 </body>
 
 
-
+<!-- js -->
 <script src="js/script.js"></script>
 <!-- jQuery -->
 <script src="js/jquery-3.6.1.min.js"></script>

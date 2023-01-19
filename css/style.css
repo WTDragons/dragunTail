@@ -4,78 +4,90 @@ html,body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;  
+    image-rendering: pixelated;/* zoom image without AA */
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+/* header */
 .navbar{
     background-color: rgb(207, 144, 93);
-}
-
-.navicon{
-  height: 100px;
+  }
+.logo{
+  height: 128px;
   position: absolute;
   top: 0;
-  left: 150px;
+  left: 0;
+
+}
+
+
+@media (max-width: 1200px) {
+  .logo{height: 100%;}}
+
+@media (max-width: 575px) {
+  .logo{display: none;}}
+
+.nav_img{
+  height: 96px;
+  width: 96px;
+}
+
+
+#go-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:rgb(156, 44, 44);
+  color: white;
+  cursor: pointer;
   padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 0.7;
 }
 
-.headerImg{
-  width: 100%;
-  height: 300px;
-  object-fit: cover; 
-
+#go-top-btn:hover {
+  background-color: rgb(156, 44, 44); /* Add a dark-grey background on hover */
+opacity: 1;
 }
 
-.footer{
-  margin-top: 164px;
-  width: 100%;
-  height: 15%;
+
+
+/* footer */
+#footer{
+  padding: 2.5% 0 0.5% 0;
+  margin-top:5%;
   background-color: rgb(207, 144, 93);
-  display: flex;    
-  justify-content: center ;
  }
  
+ .title{
+  display: flex;
+  justify-content:center ;
+  height: 48px;
+}
+
  .footerIconList{
    display: flex;
-   justify-content: center ;
-   padding-top: 10%;
+   justify-content:center ;
  }
  
- .footerIcon{
-   margin: 0 10px 0 10px;
-   transition: top 0.2s;
- }
- 
+.footerIcon{
+  padding-right: 1%;
+  transition: transform 0.3s ease-in-out; 
+}
+
  .footerIcon:hover{
    cursor: pointer;
-   top:-4px;
-   position: relative;
+   transform: translateY(-10px); 
  }
 
-
-
-
-
-
-.paragraph{
-    line-height:  1.2;
-    font-size: x-small;
-    color: white;
-}
-
-.paragraph2{
-  line-height:  1.2;
-  font-size: x-small;
-  color:  rgb(105, 66, 49);
-}
-
-.title{
-    color: white;
-}
-
+/* common */
 .box{
     background-color:  rgb(226, 175, 113);
     height: 300px;
@@ -84,6 +96,9 @@ html,body{
     padding-top: 5%;
 }
 
+/* about */
+
+
 .icon{
   height: 256px;
   width: 256px;
@@ -91,31 +106,35 @@ html,body{
     justify-content: center;
 }
 
+/* information */
+
+/* gallery */
 .galleryImg{
     width: 100%;
     height: 250px;
  object-fit: cover; 
 }
  
-
-  .galleryCon{
+.galleryCon{
     background-color: rgb(255, 239, 220);
   }
 
-
-.smallTitle{
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(105, 66, 49);
-  }
-
-
-  .box,.galleryImg,.icon {
-    opacity: 1;
-    animation: fade 1s ;
+/* commission */
+/* market */
+/* tutorial */
+/* contact */
+.text{
+  margin: auto;
+  line-height: 150%;
 }
 
+/* keyframes_animation */
+.icon,.card-img-top {
+  opacity: 1;
+  animation: fade 1s ;
+}
+
+/* keyframes */
 @keyframes fade {
   0% { opacity: 0 }
   100% { opacity: 1 }
@@ -124,6 +143,7 @@ html,body{
 
 
 
+/* 
 .navbar-expand-xl .navbar #menu .menu li:nth-child(1)::before{border:none}header .navbar-expand-xl .navbar #menu .menu 
     li::after
     {content:"";
@@ -147,4 +167,19 @@ html,body{
       transition:0.15s ease;
       -ms-transition:0.15s ease;
       padding:77px 30px 0 30px;z-index:2}
-    
+     */
+
+     .filter-btns {
+      display: flex;
+      justify-content: center;
+  }
+  .filter-btns button {
+      margin: 0 10px;
+  }
+  /* .card {
+      display: none;
+  } */
+  .card.active {
+      display: block;
+  }
+  
