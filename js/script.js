@@ -1,3 +1,4 @@
+// zoom
 var zoom = 1;
             function zoomIn() {
               zoom += 1;
@@ -10,7 +11,8 @@ var zoom = 1;
                 return false;
               } 
             }
-            
+          
+// modal
 $(document).ready(function(){
   $('img').on('click', function(){
     var img = $(this).data('img');
@@ -18,7 +20,7 @@ $(document).ready(function(){
   });
 });
 
-
+// go top
 $(document).ready(function(){
   $(window).scroll(function () {
       if ($(this).scrollTop() > 50) {
@@ -50,3 +52,34 @@ $('.filter-btns button').click(function(){
     }
 });
 
+
+
+
+// local nav
+document.querySelectorAll('.local_nav .square').forEach(square => {
+  square.addEventListener('click', event => {
+    event.preventDefault();
+    const link = event.target.closest('a');
+    const sectionId = link.getAttribute('href');
+    const section = document.querySelector(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+
+
+const copyBtn = document.getElementById('copy-btn');
+const textToCopy = document.getElementById('text-to-copy');
+
+copyBtn.addEventListener('click', () => {
+    const range = document.createRange();
+    range.selectNode(textToCopy);
+    window.getSelection().addRange(range);
+    try {
+        document.execCommand("copy");
+    } catch (err) {
+        console.log("Oops, unable to copy");
+    }
+    window.getSelection().removeAllRanges();
+    alert("Text copied to clipboard!");
+});

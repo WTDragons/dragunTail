@@ -17,12 +17,22 @@ html,body{
   }
 
 .logo{
-  height: 128px;
+  height: 96px;
 }
 
-@media (max-width: 1200px) {
-  .logo{height: 96px;}}
+.title1{height: 48px;}
 
+
+
+@media (max-width: 1200px) {
+  .logo{height: 48px;}
+  .title1{height: 32px;}
+}
+
+
+.intro_img{
+height: 256px;
+}
 
 
 .nav_img{
@@ -207,9 +217,62 @@ opacity: 1;
     } 
   }
 
-  .intro{
-    display: flex;
-    align-items: center;
+   
+ 
+.local_nav {
+    list-style-type: none;
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    /* margin-top: -160px; */
+    z-index: 400;
+  }
+
+.square{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(116, 91, 91);
+    /* border: 1px solid rgb(96, 50, 50); */
+  }
+  
+.square:hover {
+      filter: brightness(70%);
+  }
+
+  @media (max-width: 767px) {
+    .square{
+      width: 5px;
+      height: 5px;
+    } 
+  }
+
+  
+  .local_nav_item{
+    padding-bottom: 250%;
   }
 
  
+  .intro-img{
+    text-align: center;
+    }
+
+.line{
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.formTitle{
+  padding-bottom: 3%;
+}
+
+.formTitle{
+  font-size: 24px;
+}
+
+.formText{
+  font-size: 16px;
+}
