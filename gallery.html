@@ -10,13 +10,10 @@
     <title>龍與尾巴亭 | 像素 | 繪圖 | 委託 | 外部</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/normalize.css"> 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    
 </head>
 
 <body oncontextmenu="return false;">
@@ -24,39 +21,43 @@
 <!-- main menu -->
 <header>
   <nav class="navbar navbar-expand-xl navbar-dark ">
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid">
+    <a href="index.html">  
+      <img src="img/logo.png" alt="logo" class="logo">
+        <img src="img/title.png" alt="" style="height: 48px;">
+    </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-<!-- logo -->
    
 <!-- main menu list -->
-    <div class="collapse navbar-collapse justify-content-end" id="navList"> 
-      <ul class="navbar-nav ">
-        <a href="index.html">  
-          <img src="img/logo.png" alt="logo" class="logo">
-      </a>
-        <li class="nav-item active"> <img class="nav_img" src="img/about.png" alt="about">
-          <a class="nav-link" href="about.html">關於也龍</a>
+      <div class="navbar-collapse  collapse justify-content-end" id="menu"> 
+        <ul class="navbar-nav">
+
+          <li class="nav-item justify-content-center active "> 
+            <a href="about.html"><img class="nav_img" src="img/about.png" alt="about"></a>
+            <a class="nav-link" href="about.html">關於也龍</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/information.png" alt="information">
+            <a class="nav-link" href="information.html">公告欄</a>
         </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/information.png" alt="information">
-          <a class="nav-link" href="information.html">公告欄</a>
-      </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/gallery.png" alt="gallery">
-            <a class="nav-link" href="gallery.html">藝術畫廊</a>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/gallery.png" alt="gallery">
+              <a class="nav-link" href="gallery.html">藝術畫廊</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/commission.png" alt="commission">
+              <a class="nav-link" href="commission.html">委託相關</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/market.png" alt="market">
+            <a class="nav-link" href="market.html">​龍尾巴市集</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/tutorial_pixel.png" alt="tutorial_pixel">
+            <a class="nav-link" href="tutorial_pixel.html">施工中</a>
         </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/commission.png" alt="commission">
-            <a class="nav-link" href="commission.html">委託相關</a>
-        </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/market.png" alt="market">
-           <a class="nav-link" href="market.html">​龍尾巴市集</a>
-        </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/tutorial_pixel.png" alt="tutorial_pixel">
-          <a class="nav-link" href="tutorial_pixel.html">施工中</a>
-       </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/contact.png" alt="contact">
-            <a class="nav-link" href="contact.html">聯絡我</a>
-        </li>
-      </ul>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/contact.png" alt="contact">
+              <a class="nav-link" href="contact.html">聯絡我</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
@@ -188,21 +189,20 @@
                 <img class=" galleryImg " src="img/ill (4).jpg">
             </a>
         </div>
-
+      </div>
 </div>
-
 
 
 <!-- footer --> 
 <footer class="container-fluid" id="footer" >
   <div class="row ">
 <!-- social -->    
-<div class="title col-md-6 ">
+<div class="title col-md-6">
   <img src="img/title.png" alt="">
 </div>
 
 
-      <div class="footerIconList col-md-6 ">
+      <div class="footerIconList col-md-6">
           <div class="footerIcon ">
               <a href="  https://home.gamer.com.tw/homeindex.php?owner=wtdragon"><img src="img/gamer.png" alt="Gamer"></a>
           </div>
@@ -223,20 +223,16 @@
           </div>
       </div>
 <!-- copyright -->
-      <div class="text-center">
+      <div class="text-center pt-2">
           <p class="text-muted small mb-0">Copyright &copy; WTDragon</p>
       </div>
   </div>
 </footer>
-</body>
-
-
-<!-- js -->
-<script src="js/script.js"></script>
-<!-- jQuery -->
-<script src="js/jquery-3.6.1.min.js"></script>
-<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.bundle.min.js"></script>
 
+   <!-- Custom JS -->
+   <script src="js/script.js"></script>
+
+</body>
 </html>

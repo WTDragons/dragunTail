@@ -10,13 +10,10 @@
     <title>龍與尾巴亭 | 像素 | 繪圖 | 委託 | 外部</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/normalize.css"> 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    
 </head>
 
 <body oncontextmenu="return false;">
@@ -24,39 +21,43 @@
 <!-- main menu -->
 <header>
   <nav class="navbar navbar-expand-xl navbar-dark ">
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid">
+    <a href="index.html">  
+      <img src="img/logo.png" alt="logo" class="logo">
+        <img src="img/title.png" alt="" style="height: 48px;">
+    </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-<!-- logo -->
    
 <!-- main menu list -->
-    <div class="collapse navbar-collapse justify-content-end" id="navList"> 
-      <ul class="navbar-nav ">
-        <a href="index.html">  
-          <img src="img/logo.png" alt="logo" class="logo">
-      </a>
-        <li class="nav-item active"> <img class="nav_img" src="img/about.png" alt="about">
-          <a class="nav-link" href="about.html">關於也龍</a>
+      <div class="navbar-collapse  collapse justify-content-end" id="menu"> 
+        <ul class="navbar-nav">
+
+          <li class="nav-item justify-content-center active "> 
+            <a href="about.html"><img class="nav_img" src="img/about.png" alt="about"></a>
+            <a class="nav-link" href="about.html">關於也龍</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/information.png" alt="information">
+            <a class="nav-link" href="information.html">公告欄</a>
         </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/information.png" alt="information">
-          <a class="nav-link" href="information.html">公告欄</a>
-      </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/gallery.png" alt="gallery">
-            <a class="nav-link" href="gallery.html">藝術畫廊</a>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/gallery.png" alt="gallery">
+              <a class="nav-link" href="gallery.html">藝術畫廊</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/commission.png" alt="commission">
+              <a class="nav-link" href="commission.html">委託相關</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/market.png" alt="market">
+            <a class="nav-link" href="market.html">​龍尾巴市集</a>
+          </li>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/tutorial_pixel.png" alt="tutorial_pixel">
+            <a class="nav-link" href="tutorial_pixel.html">施工中</a>
         </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/commission.png" alt="commission">
-            <a class="nav-link" href="commission.html">委託相關</a>
-        </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/market.png" alt="market">
-           <a class="nav-link" href="market.html">​龍尾巴市集</a>
-        </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/tutorial_pixel.png" alt="tutorial_pixel">
-          <a class="nav-link" href="tutorial_pixel.html">施工中</a>
-       </li>
-        <li class="nav-item active"> <img class="nav_img" src="img/contact.png" alt="contact">
-            <a class="nav-link" href="contact.html">聯絡我</a>
-        </li>
-      </ul>
+          <li class="nav-item justify-content-center active"> <img class="nav_img" src="img/contact.png" alt="contact">
+              <a class="nav-link" href="contact.html">聯絡我</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
@@ -81,7 +82,7 @@
        </div>
     </div>
     <div class="carousel-item">
-      <img src="img/main2.jpg" class="d-block w-100" alt="...">
+      <img src="img/main.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
@@ -107,34 +108,147 @@
 
 
 <!-- Introduction -->
-<div introduction class="introduction py-3">
-  <div class="container  ">
-    <div class="row">
-        <div class="col-md-6 icon">
-          <img src="img/icon.png" class="img-fluid  mb-3">
-        </div>
+<div class="container introduction py-3  ">
+  <div class="row  intro">
+    <div class="col-md-6 icon ">
+      <img src="img/about.png" class="img-fluid  mb-3">
+    </div>
+      <div class="col-md-6 ">
+        <h3>也龍</h3>
+        <h6 class="mb-3 text">我是也龍，也可以叫我WTDragun。<br>
+        像素美術師，擅長於像素動畫和低像素風格。<br>
+        目前正在經營社團【龍與尾巴亭】。<br>
+        接案範圍包括人物、背景、遊戲美術、直播過場、DC表情符號和貼圖。<br><br>
 
-
-        <div class="col-md-6 ">
-          <h3>也龍</h3>
-              <h6 class="mb-3 text">我是也龍，也可以叫我WTDragun。<br>
-                像素美術師，擅長於像素動畫和低像素風格。<br>
-                目前正在經營社團【龍與尾巴亭】。<br>
-                接案範圍包括人物、背景、遊戲美術、直播過場、DC表情符號和貼圖。<br><br>
-            
-                以往的像素委託，由於像素知識不普及，也需要不斷確認想法一致，<br> 
-                導致高度的溝通成本。
-                有鑑於此，希望能藉著【也龍與像素教學】，將像素藝術的知識帶入ACG圈子中。<br>
-                再透過建立【龍尾巴市集】，維持品質的同時，降低像素作品的成本。<br>
-                讓各位可以開開心心的欣賞屬於自己的作品！<br>
-              </h6>
-        </div>
-
+        以往的像素委託，由於像素知識不普及，委託本身也需要不斷確認想法一致，<br> 
+        導致高度的溝通成本。
+        有鑑於此，希望能藉著【也龍與像素教學】，將像素藝術的知識帶入ACG圈子中。<br>
+        再透過建立【龍尾巴市集】，維持品質的同時，降低像素作品的成本。<br>
+        讓各位可以開開心心的欣賞屬於自己的作品！<br>
+        </h6>
       </div>
+    </div>
+</div>
+
+<!-- skill -->
+<!-- content -->
+<div class="container text-center"> 
+  <div class="row">
+    <!-- convention -->
+    <div class="col-12  pt-5"> <h2>技能</h2></div>
+<div class="col-6 col-md-3">
+  <div class="card h-100">
+          <img src="img/convention_card.png" class="card-img-top" alt="convention_card">
+          <div class="card-body">
+            <h4 class="card-title">遊戲美術</h4>
+            <p class="card-text">主力鑽研領域 | Unity</p>
+          </div>
+            
+          <ul class="list-group list-group-flush ">
+            <a href="#" class="text-decoration-none">
+              <li class="list-group-item btn btn-light "  >
+                 <span class="badge bg-info">FF40</span> Sprite（精靈圖）
+              </li>
+            </a>
+            <li class="list-group-item">
+                <span class="badge bg-info">CWT62</span> Tile（圖塊）
+            </li>
+            <li class="list-group-item">
+                <span class="badge bg-info">PF37</span> 地圖,場景,道具
+            </li>
+          </ul> 
+
+          <div class="card-footer">
+            <small class="text-muted">粒子系統學習中...</small>
+          </div>
+        </div>
+    </div>
+    <!-- information -->
+<div class="col-6 col-md-3">
+      
+  <div class="card h-100">
+    <img src="img/information_card.png" class="card-img-top" alt="information_card">
+    <div class="card-body">
+      <h4 class="card-title">像素動畫</h4>
+      <p class="card-text">老本行 | Aseprite</p>
+    </div>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
         
+          <span class="badge bg-info">通販</span> 角色動畫
+      </li>
+      <li class="list-group-item">
+          <span class="badge bg-warning">新品</span> 2D特效
+      </li>
+      <li class="list-group-item">
+          <span class="badge bg-danger">好耶</span> 表符／貼圖
+      </li>
+    </ul> 
+
+    <div class="card-footer">
+      <small class="text-muted">持續精進觀念和細節中...</small>
     </div>
   </div>
 </div>
+
+
+<!-- convention -->
+  <div class="col-6 col-md-3">
+    <div class="card h-100">
+      <img src="img/convention_card.png" class="card-img-top" alt="convention_card">
+      <div class="card-body">
+        <h4 class="card-title">插畫</h4>
+        <p class="card-text">最近比較常畫 | Aseprite</p>
+      </div>
+        
+      <ul class="list-group list-group-flush ">
+        <a href="#" class="text-decoration-none">
+          <li class="list-group-item btn btn-light "  >
+              <span class="badge bg-info">FF40</span> 可愛
+          </li>
+        </a>
+        <li class="list-group-item">
+            <span class="badge bg-info">CWT62</span> Q版
+        </li>
+        <li class="list-group-item">
+            <span class="badge bg-info">PF37</span> 場景
+        </li>
+      </ul> 
+
+      <div class="card-footer">
+        <small class="text-muted">補基礎中...</small>
+      </div>
+    </div>
+</div>
+
+<!-- commission  -->
+<div class="col-6 col-md-3">
+  <div class="card h-100">
+          <img src="img/commission_card.png" class="card-img-top" alt="commission_card">
+          <div class="card-body">
+            <h4 class="card-title">程式設計</h4>
+            <p class="card-text">新手</p>
+          
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <span class="badge bg-success">商用</span> 前端開發
+            </li>
+            <li class="list-group-item">
+                <span class="badge bg-success">個人</span> C與C++
+            </li>
+          
+          </ul>        
+          <div class="card-footer">
+            <small class="text-muted">物件...導向...</small>
+          </div>
+        </div>
+    </div>
+<!-- end -->
+  </div>       
+</div>
+
 
 
 <!-- End of body -->
@@ -146,12 +260,12 @@
 <footer class="container-fluid" id="footer" >
   <div class="row ">
 <!-- social -->    
-<div class="title col-md-6 ">
+<div class="title col-md-6">
   <img src="img/title.png" alt="">
 </div>
 
 
-      <div class="footerIconList col-md-6 ">
+      <div class="footerIconList col-md-6">
           <div class="footerIcon ">
               <a href="  https://home.gamer.com.tw/homeindex.php?owner=wtdragon"><img src="img/gamer.png" alt="Gamer"></a>
           </div>
@@ -172,20 +286,16 @@
           </div>
       </div>
 <!-- copyright -->
-      <div class="text-center">
+      <div class="text-center pt-2">
           <p class="text-muted small mb-0">Copyright &copy; WTDragon</p>
       </div>
   </div>
 </footer>
-</body>
-
-
-<!-- js -->
-<script src="js/script.js"></script>
-<!-- jQuery -->
-<script src="js/jquery-3.6.1.min.js"></script>
-<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.bundle.min.js"></script>
 
+   <!-- Custom JS -->
+   <script src="js/script.js"></script>
+
+</body>
 </html>
