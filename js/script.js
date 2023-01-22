@@ -66,35 +66,32 @@ document.querySelectorAll('.local_nav .square').forEach(square => {
   });
 }); 
 
-// smooth moving, not that good anyway
-$(document).ready(function(){
-  $("a.smooth").click(function(event){
-      event.preventDefault();
-      var id = $(this).attr("href");
-      $('html, body').animate({
-          scrollTop: $(id).offset().top
-      }, 800);
-  });
-});
+// // smooth moving, not that good anyway
+// $(document).ready(function(){
+//   $("a.smooth").click(function(event){
+//       event.preventDefault();
+//       var id = $(this).attr("href");
+//       $('html, body').animate({
+//           scrollTop: $(id).offset().top
+//       }, 800);
+//   });
+// });
 
 
 
 // copy text
-const copyBtn = document.getElementById('copy-btn');
-const textToCopy = document.getElementById('text-to-copy');
 
-copyBtn.addEventListener('click', () => {
-    const range = document.createRange();
-    range.selectNode(textToCopy);
-    window.getSelection().addRange(range);
-    try {
-        document.execCommand("copy");
-    } catch (err) {
-        console.log("Oops, unable to copy");
-    }
-    window.getSelection().removeAllRanges();
+
+function copyText() {
+  var textToCopy = '暱稱\n委託類型\n交件期限\n付款方式\n預算\n委託資料\n委託內容\n作品權利\n用途\n規格\n特殊要求\n';
+  navigator.clipboard.writeText(textToCopy).then(function() {
     alert("Text copied to clipboard!");
-});
+    ;
+  }, function(err) {
+      console.error("無法複製文本：", err);
+  });
+}
+
 
 
 // $('.image-container img').click(function() {

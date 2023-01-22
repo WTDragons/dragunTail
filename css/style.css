@@ -31,7 +31,7 @@ list-style-type: none;
   right: 2%;
   top: 50%;
   /* margin-top: -160px; */
-  z-index: 400;
+  z-index: 98;
 }
 
 .square{
@@ -65,6 +65,10 @@ list-style-type: none;
   text-align: center;
 }
 
+.nav-item:hover{
+  filter: brightness(85%);
+}
+
   @media (max-width: 1200px) {
     .nav-item {
       display: flex;
@@ -87,6 +91,7 @@ list-style-type: none;
 
 .navbar{
     background-color: rgb(207, 144, 93);
+    z-index: 99;
   }
 
 .brand{
