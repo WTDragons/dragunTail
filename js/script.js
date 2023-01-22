@@ -64,10 +64,22 @@ document.querySelectorAll('.local_nav .square').forEach(square => {
     const section = document.querySelector(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
   });
+}); 
+
+// smooth moving, not that good anyway
+$(document).ready(function(){
+  $("a.smooth").click(function(event){
+      event.preventDefault();
+      var id = $(this).attr("href");
+      $('html, body').animate({
+          scrollTop: $(id).offset().top
+      }, 800);
+  });
 });
 
 
 
+// copy text
 const copyBtn = document.getElementById('copy-btn');
 const textToCopy = document.getElementById('text-to-copy');
 
@@ -83,3 +95,8 @@ copyBtn.addEventListener('click', () => {
     window.getSelection().removeAllRanges();
     alert("Text copied to clipboard!");
 });
+
+
+// $('.image-container img').click(function() {
+//   $(this).toggleClass('active');
+// });
