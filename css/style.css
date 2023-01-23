@@ -66,6 +66,7 @@ list-style-type: none;
 }
 
 .nav-item:hover{
+  cursor: pointer;
   filter: brightness(85%);
 }
 
