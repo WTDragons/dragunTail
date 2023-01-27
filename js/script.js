@@ -22,14 +22,6 @@ $(document).ready(function(){
 
 // go top
 $(document).ready(function(){
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-          $('#go-top-btn').fadeIn();
-      } else {
-          $('#go-top-btn').fadeOut();
-      }
-  });
-  
   $('#go-top-btn').click(function () {
       $('body,html').animate({
           scrollTop: 0
@@ -97,3 +89,15 @@ function copyText() {
 // $('.image-container img').click(function() {
 //   $(this).toggleClass('active');
 // });
+
+
+
+
+$(document).scroll(function () {
+  let y = $(this).scrollTop();
+  if (y > 200) {
+      $('.goTopBtn').fadeIn();
+  } else {
+      $('.goTopBtn').fadeOut();
+  }
+});

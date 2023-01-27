@@ -3,7 +3,7 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;  
+    /* overflow-x: hidden;   */
     image-rendering: pixelated;/* zoom image without AA */
 }
 
@@ -19,17 +19,14 @@ a{
   max-width: 100%;
   height: auto;
 }
-
-ul {
-list-style-type: none;
-}
+ 
 
 /* localNav */
 .local_nav {
   list-style-type: none;
   position: fixed;
   right: 2%;
-  top: 50%;
+  top: 45%;
   /* margin-top: -160px; */
   z-index: 98;
 }
@@ -52,12 +49,15 @@ list-style-type: none;
   } 
 }
 
-
 .local_nav_item{
   padding-bottom: 250%;
 }
 
-
+@media (min-width: 767px){
+  #local_nav_google_form{
+    display: none;
+  }
+}
 
   
 /* header */
@@ -116,32 +116,12 @@ height: 256px;
 }
 
 
-#go-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color:rgb(156, 44, 44);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  opacity: 0.7;
-}
-
-#go-top-btn:hover {
-  background-color: rgb(156, 44, 44); /* Add a dark-grey background on hover */
-opacity: 1;
-}
 
 
 
 /* footer */
 #footer{
-  padding: 2.5% 0 0.5% 0;
+  padding-top: 2.5%;
   margin-top:5%;
   background-color: rgb(207, 144, 93);
  }
@@ -249,4 +229,52 @@ opacity: 1;
       display: block;
   }
   
+.actical-title-highlight{
+  font-weight:bold; 
+  color:rgb(242, 152, 103);
+}
+
+
+
+
+
+.high{
+  height: 1999px;
+  background-color: black;
+}
+
+
+
+/*goTop*/
+.goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:rgb(156, 44, 44);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 0.7;
+  }
+
+.goTopBtn:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.formTitle{
+  margin-top: 10px;
+}
+
+.formTitle,.formText{
+  line-height: 170% ;
+}
+
+
 
