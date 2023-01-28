@@ -11,9 +11,9 @@ a{
   text-decoration: none;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .line{
   max-width: 100%;
@@ -25,32 +25,20 @@ a{
 .local_nav {
   list-style-type: none;
   position: fixed;
-  right: 2%;
-  top: 45%;
-  /* margin-top: -160px; */
-  z-index: 98;
-}
-
-.square{
-  width: 10px;
-  height: 10px;
-  background-color: rgb(116, 91, 91);
-  /* border: 1px solid rgb(96, 50, 50); */
-}
-
-.square:hover {
-    filter: brightness(70%);
-}
-
-@media (max-width: 767px) {
-  .square{
-    width: 5px;
-    height: 5px;
-  } 
+  right: 1%;
+  top: 55%;
+  border-radius: 8px;
+  background-color: rgb(129, 75, 75);
 }
 
 .local_nav_item{
-  padding-bottom: 250%;
+  opacity: 0.9;
+  padding: 6px 6px;
+}
+
+.local_nav_item:hover{
+  background-color: rgb(207, 144, 93);
+    border-radius: 8px;
 }
 
 @media (min-width: 767px){
@@ -59,7 +47,19 @@ a{
   }
 }
 
-  
+.local_nav_text{
+  text-align: center;
+  color: rgb(255, 253, 243);
+  font-size: 13px;
+}
+
+@media (max-width: 767px){
+  .local_nav{
+    opacity: 0.8;
+    right: 0;
+  }
+}
+
 /* header */
 #menu{
   text-align: center;
@@ -225,10 +225,15 @@ height: 256px;
   /* .card {
       display: none;
   } */
-  .card.active {
+  .gallery_img.active {
       display: block;
   }
   
+
+
+
+
+
 .actical-title-highlight{
   font-weight:bold; 
   color:rgb(242, 152, 103);
@@ -236,12 +241,7 @@ height: 256px;
 
 
 
-
-
-.high{
-  height: 1999px;
-  background-color: black;
-}
+ 
 
 
 
@@ -250,7 +250,7 @@ height: 256px;
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 1%;
   z-index: 99;
   border: none;
   outline: none;
@@ -268,6 +268,12 @@ height: 256px;
   cursor: pointer;
 }
 
+@media (max-width: 767px){
+  .goTopBtn{
+    right: 0;
+  }
+}
+
 .formTitle{
   margin-top: 10px;
 }
@@ -276,5 +282,29 @@ height: 256px;
   line-height: 170% ;
 }
 
+
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  color: rgb(255, 242, 242);
+  position: absolute;
+  bottom:  0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px #323232, 0 0 3px #323232, 0 0 3px #323232, 0 0 3px #323232; font-weight: bold;
+}
+
+.share_social{
+  cursor: pointer;
+}   
+
+.share_social:hover{
+  filter: brightness(70%);
+}   
 
 

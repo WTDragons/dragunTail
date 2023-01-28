@@ -37,10 +37,10 @@ $('.filter-btns button').click(function(){
     //Add active class to clicked button
     $(this).addClass('active');
     var filterValue = $(this).attr('data-filter');
-    $('.card').show();
-    $('.card').not('[data-category="'+filterValue+'"]').hide();
+    $('.gallery_img').show();
+    $('.gallery_img').not('[data-category="'+filterValue+'"]').hide();
     if(filterValue=='all'){
-        $('.card').show();
+        $('.gallery_img').show();
     }
 });
 
@@ -101,3 +101,13 @@ $(document).scroll(function () {
       $('.goTopBtn').fadeOut();
   }
 });
+
+
+
+function sharePage() {
+  // Get the current page URL
+  var currentUrl = window.location.href;
+  
+  // Share the URL on social media (replace with the appropriate platform)
+  window.open("https://www.facebook.com/sharer/sharer.php?u=" + currentUrl);
+}
