@@ -104,6 +104,9 @@ a{
   .brand{height: 64px;}
 }
 
+.brand_footer{
+  height: 96px;
+}
 
 .intro_img{
 height: 256px;
@@ -121,7 +124,7 @@ height: 256px;
 
 /* footer */
 #footer{
-  padding-top: 2.5%;
+  padding-top: 1%;
   margin-top:5%;
   background-color: rgb(207, 144, 93);
  }
@@ -232,8 +235,6 @@ height: 256px;
 
 
 
-
-
 .actical-title-highlight{
   font-weight:bold; 
   color:rgb(242, 152, 103);
@@ -308,3 +309,21 @@ height: 256px;
 }   
 
 
+.article-holder{
+  background-color: #ffb7771e;
+  margin-top: 50px;
+}
+
+ 
+
+@media (min-width: 767px){
+  .gallery_img{
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px){
+  .gallery_img{
+    width: 100%;
+  }
+}
