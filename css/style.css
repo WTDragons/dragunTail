@@ -3,37 +3,39 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    /* overflow-x: hidden;   */
-    image-rendering: pixelated;/* zoom image without AA */
+    image-rendering: pixelated;
 }
 
 a{
   text-decoration: none;
 }
 
-/* ::-webkit-scrollbar {
-  display: none;
-} */
-
 .line{
   max-width: 100%;
   height: auto;
 }
  
-
 /* localNav */
 .local_nav {
   list-style-type: none;
   position: fixed;
   right: 1%;
-  top: 55%;
+  bottom: 88px;
   border-radius: 8px;
   background-color: rgb(129, 75, 75);
 }
 
+@media (min-width: 767px){
+  .local_nav{
+    bottom: 35%;
+  }
+}
+
+
 .local_nav_item{
   opacity: 0.9;
   padding: 6px 6px;
+  cursor: pointer;
 }
 
 .local_nav_item:hover{
@@ -88,8 +90,6 @@ a{
     } 
   }
 
-
-
 .navbar{
     background-color: rgb(207, 144, 93);
     z-index: 99;
@@ -112,15 +112,10 @@ a{
 height: 256px;
 }
 
-
 .nav_img{
   height: 96px;
   width: 96px;
 }
-
-
-
-
 
 /* footer */
 #footer{
@@ -158,133 +153,16 @@ height: 256px;
  }
 
 /* common */
-.box{
-    background-color:  rgb(226, 175, 113);
-    height: 300px;
-    width: auto;
-    margin-top: 10%;
-    padding-top: 5%;
+.hover-dark:hover{
+  filter: brightness(80%);
 }
-
-/* about */
-.icon{
-  height: 256px;
-  width: 256px;
-    display: flex;
-    justify-content: center;
-}
-
-/* information */
-
-/* gallery */
-
-
-/* commission */
-
-/* commissionForm */
-.formTitle{
-  padding-bottom: 3%;
-}
-
-.formTitle{
-  font-size: 24px;
-}
-
-.formText{
-  font-size: 16px;
-}
-
-
-/* market */
-/* tutorial */
-/* contact */
-.text{
-  margin: auto;
-  line-height: 150%;
-}
-
-/* keyframes_animation */
-.icon,.card-img-top {
-  opacity: 1;
-  animation: fade 1s ;
-}
-
-/* keyframes */
-@keyframes fade {
-  0% { opacity: 0 }
-  100% { opacity: 1 }
-}
-
-
-
-/* filter */
-.filter-btns {
-      display: flex;
-      justify-content: center;
-  }
-  .filter-btns button {
-      margin: 0 10px;
-  }
-  /* .card {
-      display: none;
-  } */
-  .gallery_img.active {
-      display: block;
-  }
-  
-
-
 
 .actical-title-highlight{
   font-weight:bold; 
   color:rgb(242, 152, 103);
 }
 
-
-
- 
-
-
-
-/*goTop*/
-.goTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 1%;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color:rgb(156, 44, 44);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  opacity: 0.7;
-  }
-
-.goTopBtn:hover{
-  opacity: 1;
-  cursor: pointer;
-}
-
-@media (max-width: 767px){
-  .goTopBtn{
-    right: 0;
-  }
-}
-
-.formTitle{
-  margin-top: 10px;
-}
-
-.formTitle,.formText{
-  line-height: 170% ;
-}
-
-
-
+/* banner */
 .banner {
   position: relative;
   text-align: center;
@@ -300,6 +178,7 @@ height: 256px;
   text-shadow: 0 0 3px #323232, 0 0 3px #323232, 0 0 3px #323232, 0 0 3px #323232; font-weight: bold;
 }
 
+/* article */
 .share_social{
   cursor: pointer;
 }   
@@ -308,22 +187,123 @@ height: 256px;
   filter: brightness(70%);
 }   
 
-
 .article-holder{
   background-color: #ffb7771e;
   margin-top: 50px;
 }
 
- 
 
-@media (min-width: 767px){
-  .gallery_img{
-    width: 50%;
-  }
+/* filter */
+.filter-btns {
+  display: flex;
+  justify-content: center;
+}
+.filter-btns button {
+  margin: 0 1%;
+}
+/* .card {
+  display: none;
+} */
+
+/*goTop*/
+.goTopBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 1%;
+z-index: 98;
+border: none;
+outline: none;
+background-color:rgb(156, 44, 44);
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 10px;
+font-size: 18px;
+opacity: 0.7;
+}
+
+.goTopBtn:hover{
+opacity: 1;
+cursor: pointer;
 }
 
 @media (max-width: 767px){
-  .gallery_img{
-    width: 100%;
-  }
+.goTopBtn{
+right: 0;
 }
+}
+
+
+
+
+
+
+
+/* about */
+.icon{
+  height: 256px;
+  width: 256px;
+    display: flex;
+    justify-content: center;
+}
+
+/* information */
+
+/* gallery */
+
+/* .gallery_img.active {
+  display: block;
+} */
+
+@media (min-width: 767px){
+.gallery_img{
+  width: 50%;
+}
+}
+
+@media (max-width: 767px){
+.gallery_img{
+  width: 100%;
+}
+}
+
+
+/* commission */
+
+/* commissionForm */
+.formTitle{
+  padding-bottom: 3%;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.formTitle,.formText{
+  line-height: 170% ;
+}
+
+.formText{
+  font-size: 16px;
+}
+
+/* market */
+/* tutorial */
+/* contact */
+
+
+/* keyframes_animation */
+.icon,.card-img-top {
+  opacity: 1;
+  animation: fade 1s ;
+}
+
+/* keyframes */
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+/* .text{
+  margin: auto;
+  line-height: 150%;
+} */
